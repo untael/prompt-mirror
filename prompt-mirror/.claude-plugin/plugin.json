@@ -1,0 +1,10 @@
+{
+  "name": "prompt-mirror",
+  "version": "0.1.0",
+  "description": "Five questions before you accept the change. A reflection skill for Claude Code that surfaces the hidden assumption, missing requirement, evidence gap, verification and your own understanding. It never proposes the fix.",
+  "author": { "name": "Pavel Mironov", "url": "https://github.com/untael" },
+  "license": "MIT",
+  "homepage": "https://github.com/untael/prompt-mirror",
+  "repository": "https://github.com/untael/prompt-mirror",
+  "keywords": ["reflection", "verification", "prompting", "skill"]
+}

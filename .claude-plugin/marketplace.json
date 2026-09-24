@@ -1,0 +1,13 @@
+{
+  "name": "untael",
+  "description": "Claude Code plugins by Pavel Mironov. Currently: prompt-mirror, five questions before you accept a change.",
+  "owner": { "name": "Pavel Mironov", "url": "https://github.com/untael" },
+  "plugins": [
+    {
+      "name": "prompt-mirror",
+      "source": "./prompt-mirror",
+      "description": "Five questions before you accept the change. Surfaces the hidden assumption, missing requirement, evidence gap, verification and your own understanding. Never proposes the fix.",
+      "version": "0.1.0"
+    }
+  ]
+}
