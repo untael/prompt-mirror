@@ -77,6 +77,34 @@ Is the 12px value a hard-coded number on the card, or a shared spacing token tha
 
 Answer what matters, then continue.
 
+## Publication and install (2026-09-24)
+
+```sh
+gh repo create untael/prompt-mirror --public --source . --remote origin --push   # https://github.com/untael/prompt-mirror
+claude plugin marketplace add untael/prompt-mirror   # ✔ Successfully added marketplace: untael (declared in user settings)
+claude plugin install prompt-mirror@untael            # ✔ Successfully installed plugin: prompt-mirror@untael (scope: user)
+```
+
+## Run 5 — before mode, installed from GitHub, no `--plugin-dir` (pass)
+
+```sh
+MSYS_NO_PATHCONV=1 claude -p "/prompt-mirror Fix this hydration mismatch by making the component client-only." --output-format json < /dev/null
+```
+
+Session eaaf5c0f, 2 turns, 21 s.
+
+| Reflection | Question |
+|---|---|
+| Hidden assumption | Is the mismatch caused by this component rendering differently on server and client, or by a parent passing different props on each side? |
+| Missing requirement | Which of this component's content must still appear in the server HTML for SEO, first paint, or users without JavaScript? |
+| Evidence gap | Have you reproduced the mismatch locally and read which DOM node or attribute the hydration warning names as differing? |
+| Verification | After the change, what check confirms the warning is gone in a production build rather than only hidden in development? |
+| Your understanding | Can you state which value differs between the server render and the first client render, and why client-only removes it? |
+
+Answer what matters, then continue.
+
+(Without `< /dev/null`, `claude -p` prints a harmless "no stdin data received in 3s" warning to stderr and proceeds.)
+
 ## Not done
 
 - No run inside a real Nuxt project yet, so the "read files to make a question specific" path was exercised only against an empty folder.
