@@ -46,6 +46,7 @@ Some points in the talk come from experiments, some from surveys, and some are p
 ## Illustrations and attribution
 
 - Slide 10 quotes Barbossa in *Pirates of the Caribbean: The Curse of the Black Pearl* (2003): "the code is more what you'd call 'guidelines' than actual rules." The film still shows the Pirate Code book from *At World's End* (2007).
-- The carriage/car comparison is a teaching analogy. No claim is made about the prevalence of historical fears or successful occupational transitions.
-- Agent dialogues, the Nuxt scenario and the check-ssr output on slide 12 are scripted illustrations. The answer-ordering and recommendation examples are observations to discuss, not quantified findings from the cited studies.
+- The car and supercar comparison on slide 2 is a teaching analogy about amplification. It makes no claim about anyone's driving or about the difficulty of any technological transition.
+- The agent turns on slides 4, 5, 7 and 8, the Nuxt scenario and the check-ssr output on slide 12 are scripted illustrations. The answer-ordering and recommendation examples are observations to discuss, not quantified findings from the cited studies.
+- [Claude Code: Hooks](https://code.claude.com/docs/en/hooks) is the reference for the Stop hook mentioned on slide 12.
 - Prompt Mirror v0.1 exists in this repository. The output on slide 13 is a recorded run (see `prompt-mirror/skills/prompt-mirror/examples.md`). The skill has not been evaluated experimentally.
